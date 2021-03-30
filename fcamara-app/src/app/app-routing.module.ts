@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'cadastro', component: CadastroComponent},
   {path:'escolas', component: EscolasComponent},
   {path:'doacao', component: DoacaoComponent},
+  {path:'', component: MainComponent},
 ];
 
 
