@@ -1,0 +1,25 @@
+.img-carousel {
+    margin: 0 auto;
+    height: 85vh;
+    width: 80vw;
+}
+.main-container {
+    height: 60vh;
+    width: 80vw;
+    margin: 15px auto;
+}
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+}
+.box-option {
+    width: 100px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: blue;
+    text-align: center;
+    padding-top: 20px;
+    margin:20px;
+}
