@@ -1,8 +1,10 @@
 import express from 'express';
-//import ClassesController from './controllers/ClassesController';
-//import ConnectionsController from './controllers/ConnectionsController';
+import ResponsavelController from './controllers/ResponsavelController';
 
 const routes = express.Router();
 
+const responsavelController = new ResponsavelController();
+
+routes.get('/responsavel/:codigo', responsavelController.show);
 
 export default routes;
