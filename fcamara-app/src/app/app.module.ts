@@ -7,6 +7,8 @@ import { MainComponent} from './components/main/main.component';
 import { AboutComponent} from './components/about/about.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
+import { NgxMaskModule } from 'ngx-mask';
+
 @NgModule ({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
