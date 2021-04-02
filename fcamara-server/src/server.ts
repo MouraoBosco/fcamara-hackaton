@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import routes from './routes';
 import sequelize from './database';
-import Responsavel from './database/models/Responsavel';
 
 require('./database');
 

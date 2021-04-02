@@ -19,6 +19,7 @@ class Escola extends Model {
   public endereco!: string;
   public telefone!: string;
   public foto!: string | null;
+  public tipo!: string;
   public codigo!: string;
 }
 
@@ -41,10 +42,14 @@ Escola.init(
       type: DataTypes.STRING(),
       allowNull: false,
     },
+    tipo: {
+      type: DataTypes.ENUM("Municipal", "Estadual"),
+      allowNull: false
+    },
     codigo: {
       type: DataTypes.STRING(),
       allowNull: false,
-    },
+    },    
   },
   {
     tableName: "escolas",

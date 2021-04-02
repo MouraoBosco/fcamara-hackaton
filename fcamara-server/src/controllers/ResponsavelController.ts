@@ -4,10 +4,10 @@ import crypto from 'crypto';
 
 export default class ResponsavelController {
   async show (request: Request, response: Response): Promise<Response> {
-    const { codigo } = request.body();
+    const { codigo } = request.params;
 
     const responsavel = await Responsavel.findOne({
-      where: codigo
+      where: { codigo: codigo }
     });
 
     if (responsavel) {
@@ -20,9 +20,9 @@ export default class ResponsavelController {
   async create (request: Request, response: Response): Promise<Response> {
     const { nome, sobrenome, telefone, email, escola } = request.body;
 
-    const codigo = crypto.createHmac("sha256", "Sentinelas do Saber")
+    const codigo = crypto.createHash("sha256")
                          .update((nome + sobrenome + escola))
-                         .digest("hex");
+                         .digest("base64");
 
     Responsavel.create({
       nome,
@@ -33,6 +33,6 @@ export default class ResponsavelController {
       codigo
     });
     
-    return response.status(200).json("Cadastro realizado com sucesso!");
+    return response.status(200).json(codigo);
   }
 }
