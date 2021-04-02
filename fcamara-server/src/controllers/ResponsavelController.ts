@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
 import Responsavel from '../database/models/Responsavel';
+import crypto from 'crypto';
 
-export default class UsersController {
+export default class ResponsavelController {
   async show (request: Request, response: Response): Promise<Response> {
     const { codigo } = request.body();
 
@@ -16,8 +17,22 @@ export default class UsersController {
     }
   }
 
-  /*async create (request: Request, response: Response): Promise<Response> {
+  async create (request: Request, response: Response): Promise<Response> {
+    const { nome, sobrenome, telefone, email, escola } = request.body;
 
-    Responsavel.create();
-  }*/
+    const codigo = crypto.createHmac("sha256", "Sentinelas do Saber")
+                         .update((nome + sobrenome + escola))
+                         .digest("hex");
+
+    Responsavel.create({
+      nome,
+      sobrenome,
+      telefone,
+      email,
+      escola,
+      codigo
+    });
+    
+    return response.status(200).json("Cadastro realizado com sucesso!");
+  }
 }
