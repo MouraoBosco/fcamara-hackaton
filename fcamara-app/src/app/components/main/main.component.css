@@ -138,10 +138,16 @@
     padding: 15px;
     font-size: 18px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .yellow-box:hover {
     cursor: pointer;
 }
 .about-box-txt {
     margin:10px auto;
+}
+.yellow-box p {
+    margin: auto;
 }
