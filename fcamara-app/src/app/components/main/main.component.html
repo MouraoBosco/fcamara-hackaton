@@ -1,40 +1,74 @@
-<div class="main-container">
-  <carousel>
-    <slide>
-      <img src="assets/imgs/lol1.jpg" class="img-carousel" alt="first slide" style="display: block;">
-    </slide>
-    <slide>
-      <img src="assets/imgs/lol2.jpg" class="img-carousel" alt="second slide" style="display: block;">
-    </slide>
-    <slide>
-      <img src="assets/imgs/lol3.jfif" class="img-carousel" alt="third slide" style="display: block;">
-    </slide>
-  </carousel>
-</div>
-<div class="box-container">
-  <div class="box-option">
-    <button class="btn-option">
-      Doação
-      <img src="assets/imgs/icon-donation.png" alt="Doação" class="icons" width="30" height="40">
-    </button>
-    
+<div>
+  <div class="main-container">
+    <carousel>
+      <slide>
+        <img src="assets/imgs/1.png" class="img-carousel" alt="first slide" style="display: block;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="montserrat-black">Contribua com uma</h2>
+          <h4 class="reading-black">doação</h4>
+          <div class="yellow-box"><p [routerLink]="['/doacao']" routerLinkActive="router-link-active" >Realize sua contribuição aqui</p></div>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/imgs/2.png" class="img-carousel" alt="second slide" style="display: block;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="montserrat-white">Pais ou</h2>
+          <h4 class="reading-white">responsáveis</h4>
+          <div class="yellow-box"><p [routerLink]="['/cadastro']" routerLinkActive="router-link-active" >Faça já o seu cadastro</p></div>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/imgs/3.png" class="img-carousel" alt="third slide" style="display: block;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="montserrat-black">Escolas</h2>
+          <h4 class="reading-black">participantes</h4>
+          <div class="yellow-box"><p [routerLink]="['/escolas']" routerLinkActive="router-link-active" >Acesse a lista de sua escola</p></div>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/imgs/4.png" class="img-carousel" alt="fourth slide" style="display: block;">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="montserrat-white">Saiba mais sobre</h2>
+          <h4 class="reading-white">nós</h4>
+          <div class="yellow-box"><p class="about-box-txt"[routerLink]="['/about']" routerLinkActive="router-link-active" >Quem somos</p></div>
+        </div>
+      </slide>
+    </carousel>
   </div>
-  <div class="box-option">
-    <button class="btn-option">
-      <span class="arruma">Cadastro de país/responsáveis</span>
-      <img src="assets/imgs/icon-family.png" alt="Cadastro de pais/responsáveis" class="icons" width="30" height="40">
-    </button>
-  </div>
-  <div class="box-option">
-    <button class="btn-option">
-      Escolas
-      <img src="assets/imgs/icon-school.png" alt="Escolas" class="icons" width="30" height="40">
-    </button>
-  </div>
-  <div class="box-option">
-    <button class="btn-option">
-      Saiba mais
-      <img src="assets/imgs/icon-doubt.png" alt="Saiba mais" class="icons" width="30" height="40">
-    </button>
+  <div class="box-container">
+    <div class="box-option">
+        <a [routerLink]="['/doacao']" routerLinkActive="router-link-active" >
+          <button class="btn-option">
+            Doação
+            <img src="assets/imgs/icon-donation.png" alt="Doação" class="icons" width="30" height="40">
+          </button>
+        
+        </a>
+    </div>
+    <div class="box-option">
+      <a [routerLink]="['/cadastro']" routerLinkActive="router-link-active" >
+        <button class="btn-option">
+          <span class="arruma">Cadastro de país/responsáveis</span>
+          <img src="assets/imgs/icon-family.png" alt="Cadastro de pais/responsáveis" class="icons" width="30" height="40">
+        </button>
+      </a>
+    </div>
+    <div class="box-option">
+            <a [routerLink]="['/escolas']" routerLinkActive="router-link-active" >
+              <button class="btn-option">
+                Escolas
+                <img src="assets/imgs/icon-school.png" alt="Escolas" class="icons" width="30" height="40">
+              </button>
+            
+            </a>
+    </div>
+    <div class="box-option">
+          <a [routerLink]="['/about']" routerLinkActive="router-link-active" >
+            <button class="btn-option">
+              Saiba mais
+              <img src="assets/imgs/icon-doubt.png" alt="Saiba mais" class="icons" width="30" height="40">
+            </button>
+          </a>
+    </div>
   </div>
 </div>
