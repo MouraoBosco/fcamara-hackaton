@@ -53,8 +53,7 @@
 
 /* EDITANDO FORMULÁRIO: INPUTS */
 .all-inputs {
-    display: flex;
-    justify-content: center;
+    
     flex-wrap: wrap;
 }
 
