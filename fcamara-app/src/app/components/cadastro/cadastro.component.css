@@ -1,4 +1,4 @@
-/* EDITANDO HEADER / ÁREA DE CÓDIGO */
+
 #header h1 {
     font-size: 1.8rem;
     text-align: center;
@@ -43,7 +43,7 @@
     }
 
     #code-area .btn-continue {
-        margin-left: 20px;
+        margin-left: 20px;    
         margin-top: 20px;
     }
 
@@ -53,9 +53,18 @@
 
 /* EDITANDO FORMULÁRIO: INPUTS */
 .all-inputs {
-    
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;*/ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.register-area {
+    margin-right: 20px;
+ }
 
 label {
     display: flex;
@@ -98,21 +107,30 @@ label {
 }
 
 select.input {
-    width: 605px;
+    width: 610px;
     display: flex;
-    margin-left: 160px;
+    margin-left: 10px;
+}
+
+ .label-select {
+    text-indent: 2px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
 }
 
 /* EDITANDO FORMULÁRIO: BOTÕES */
 
 .btn-continue {
-    width: 130px;
-    height: 60px;
+    width: 110px;
+    height: 50px;
     border: none;
     color: #a1a1a1;
     border-radius: 4px;
     transition: ease-out 0.3s;
-    font-size: 1.1rem;
+    font-size: 1rem;
     outline: none;
     border: 3px solid #1e55fa78;
     position: relative;
@@ -146,10 +164,84 @@ select.input {
     z-index: -1;
 }
 
-    
-
 .button {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
+.label-input {
+     padding-right: 200px;
+}
+/* APLICANDO RESPONSIVIDADE */ 
+
+@media (min-width: 239.98px) { 
+    select.input {
+        width: 288px;
+        margin-left: 60px;
+    }
+    .label-select {
+        text-indent: 18%;
+    }
+
+    .register-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+ }
+
+@media (min-width: 575.98px) { 
+    select.input {
+        width: 450px;
+    }
+  
+    .register-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+
+ }
+
+
+@media (min-width: 767.98px) { 
+    select.input {
+        width: 650px;
+        margin-left: 8px;
+    }
+
+    .input-code {
+        width: 2000000000px;
+        margin-left: -20px;
+    }
+    #code-area .input{
+        border: none;
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+   
+}
+
+@media (min-width: 991.98px) { 
+    select.input {
+        width: 900px;
+    }
+    
+ }
+
+@media (min-width: 1199.98px) { 
+    select.input {
+        width: 670px;
+        margin-left: 20px;
+    }
+    .label-select{
+        display: flex;
+        text-align: center;
+    }   
+}   
+  
+ 
