@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
 .img-carousel {
     margin: 0 auto;
     height: 85vh;
     width: 80vw;
+    position: relative;
 }
 .main-container {
     height: 60vh;
@@ -12,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 24vh;
 }
 .box-option {
     text-align: center;
@@ -53,3 +56,100 @@
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+
+.icons:hover {
+    background-color: #545797;
+}
+.montserrat-black, .reading-black {
+    color:black;
+}
+.montserrat-white, .reading-white {
+    color: white;
+
+}
+.montserrat-black {
+    /*font-family and style*/
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vh;
+    line-height: 29px;
+    text-align: center;
+
+    /*positioning*/
+    margin-bottom: 40vh;
+
+
+}
+.montserrat-white {
+    /*font-family and style*/
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4vh;
+    line-height: 29px;
+   
+    /*positioning*/
+    margin-bottom: 50vh;
+    margin-right: 6vh;
+    
+}
+.reading-black {
+    /*font-family and style*/
+    font-family: "Engagement";
+    font-weight: normal;
+    font-size: 17vh;
+    line-height: 98px;
+    font-style: normal;
+    text-align: center;
+    
+    /*positioning*/
+    bottom: 28vh;
+    left: 45vh;
+    position: absolute;
+}
+.reading-white {
+    /*font-family and style*/
+    font-family: "Engagement";
+    font-weight: normal;
+    font-size: 17vh;
+    line-height: 98px;
+    font-style: normal;
+    text-align: center;
+    /*positioning*/
+    bottom: 40vh;
+    left: 45vh;
+    position: absolute;
+    
+}
+.yellow-box {
+    height: 90px;
+    width: 180px;
+    left: 0px;
+    top: 0px;
+    background: #FFBA08;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 43.1679px;
+    position: absolute;
+    top: 25vh;
+    left: 24vw;
+    padding: 15px;
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yellow-box:hover {
+    cursor: pointer;
+}
+.about-box-txt {
+    margin:10px auto;
+}
+.yellow-box p {
+    margin: auto;
+}
+>>>>>>> cec531639a9817b530ffb5dc367ad5a2deed8fdc
