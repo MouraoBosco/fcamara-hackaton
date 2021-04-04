@@ -10,9 +10,9 @@ export interface listaMaterialAttributes {
   id_responsavel: number;
 }
 
-export type listaMaterialPk = "id_responsavel";
+export type listaMaterialPk = "id_lista_material";
 export type listaMaterialId = listaMaterial[listaMaterialPk];
-export type listaMaterialCreationAttributes = listaMaterialAttributes;
+export type listaMaterialCreationAttributes = Optional<listaMaterialAttributes, listaMaterialPk>;
 
 export class listaMaterial extends Model<listaMaterialAttributes, listaMaterialCreationAttributes> implements listaMaterialAttributes {
   id_lista_material!: number;

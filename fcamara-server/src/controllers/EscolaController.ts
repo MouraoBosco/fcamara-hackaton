@@ -10,7 +10,7 @@ export default class EscolaController {
 
     try {
       const escolaBuscada = await escola.findOne({
-        where: { codigo_escola: codigo_escola }
+        where: { codigo_escola }
       });
   
       return response.json(escolaBuscada);      
