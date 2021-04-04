@@ -1,7 +1,8 @@
 {
-  "username": "admin",
-  "password": "0myadmSQLpass1",
-  "database": "db_dev",
+  "username": "fcamara-admin",
+  "password": "0myadmSQLFCamarapass1",
+  "database": "fcamara",
   "host": "127.0.0.1",
-  "dialect": "mysql"
+  "dialect": "mysql",
+  "dialectModule": "mysql2"
 }

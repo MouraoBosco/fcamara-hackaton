@@ -3,7 +3,7 @@ import cors from 'cors';
 import routes from './routes';
 import sequelize from './database';
 
-require('./database');
+import './database';
 
 const app = express();
 

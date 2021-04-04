@@ -19,6 +19,7 @@
     "nodemon": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.6.2",
+    "sequelize-auto": "^0.8.2",
     "sequelize-typescript": "^2.1.0",
     "ts-node-dev": "^1.1.6"
   },

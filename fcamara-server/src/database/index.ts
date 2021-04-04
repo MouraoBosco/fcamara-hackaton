@@ -1,6 +1,6 @@
-const Sequelize = require('sequelize');
+import { Sequelize } from 'sequelize';
 
-const config = require('./config/config');
+const config = require('./config/config'); 
 
 const sequelize = new Sequelize(
   config.database, 
@@ -10,5 +10,6 @@ const sequelize = new Sequelize(
     dialect: 'mysql'
   }
 );
+
 
 export default sequelize;

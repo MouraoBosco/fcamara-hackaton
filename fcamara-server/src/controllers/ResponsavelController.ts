@@ -1,13 +1,15 @@
 import { Request, Response } from "express";
-import Responsavel from '../database/models/Responsavel';
+import { responsavelAluno } from '../database/models/responsavel_aluno';
 import crypto from 'crypto';
 
 export default class ResponsavelController {
   async show (request: Request, response: Response): Promise<Response> {
-    const { codigo } = request.params;
+    console.log("TESTE TESTANDO 123!!!! AQUI!! AQUI!!!")
+    const { codigo_responsavel } = request.params;
+    console.log(codigo_responsavel);
 
-    const responsavel = await Responsavel.findOne({
-      where: { codigo: codigo }
+    const responsavel = await responsavelAluno.findOne({
+      where: { codigo_responsavel: codigo_responsavel }
     });
 
     if (responsavel) {
@@ -18,21 +20,24 @@ export default class ResponsavelController {
   }
 
   async create (request: Request, response: Response): Promise<Response> {
-    const { nome, sobrenome, telefone, email, escola } = request.body;
+    const { 
+      nome_responsavel, sobrenome_responsavel, telefone_responsavel, 
+      email_responsavel, id_escola 
+    } = request.body;
 
-    const codigo = crypto.createHash("sha256")
-                         .update((nome + sobrenome + escola))
+    const codigo_responsavel = crypto.createHash("sha256")
+                         .update((nome_responsavel + sobrenome_responsavel + email_responsavel))
                          .digest("base64");
 
-    Responsavel.create({
-      nome,
-      sobrenome,
-      telefone,
-      email,
-      escola,
-      codigo
+    responsavelAluno.create({
+      nome_responsavel,
+      sobrenome_responsavel,
+      telefone_responsavel,
+      email_responsavel,
+      id_escola,
+      codigo_responsavel
     });
-    
-    return response.status(200).json(codigo);
+
+    return response.status(200).json(codigo_responsavel);
   }
 }

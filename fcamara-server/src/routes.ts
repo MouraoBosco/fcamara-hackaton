@@ -9,10 +9,10 @@ const responsavelController = new ResponsavelController();
 const escolaController = new EscolaController();
 const buscaEscolaController = new BuscaEscolaController();
 
-routes.get('/responsavel/:codigo', responsavelController.show);
+routes.get('/responsavel/:codigo_responsavel', responsavelController.show);
 routes.post('/responsavel', responsavelController.create);
 
-routes.get('/escola/:codigo', escolaController.show);
+routes.get('/escola/:codigo_escola', escolaController.show);
 
 routes.get('/buscaEscola', buscaEscolaController.index);
 routes.get('/buscaEscola/:nome?/:endereco?', buscaEscolaController.show);

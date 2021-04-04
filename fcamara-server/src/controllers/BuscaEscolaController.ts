@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import Escola from '../database/models/Escola';
+import { escola } from '../database/models/escola';
 
 export default class EscolaController {
   async index (request: Request, response: Response): Promise<Response> {
-    const escolas = await Escola.findAll();
+    const escolas = await escola.findAll();
 
     if (escolas) {
       return response.json(escolas);
@@ -15,22 +15,22 @@ export default class EscolaController {
   async show (request: Request, response: Response): Promise<Response> {
     const { nome, endereco } = request.params;
 
-    let escola;
+    let escolaBuscada;
 
     if (nome) {
-      escola = await Escola.findOne({
-        where: { nome: nome }
+      escolaBuscada = await escola.findOne({
+        where: { nome_escola: '%'+ nome + '%' }
       });
     } 
-    else if (endereco) {
-      escola = await Escola.findOne({
-        where: { endereco: endereco }
+    /*else if (endereco) {
+      escolaBuscada = await escola.findOne({
+        where: { endereco_escola: '%' + endereco + '%' }
       });
-    }
+    }*/
     
 
-    if (escola) {
-      return response.json(escola);
+    if (escolaBuscada) {
+      return response.json(escolaBuscada);
     } else {
       return response.status(404).send("Escola não encontrada!");
     }
