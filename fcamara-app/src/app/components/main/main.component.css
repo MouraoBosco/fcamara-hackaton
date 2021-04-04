@@ -56,9 +56,6 @@
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
-
 .icons:hover {
     background-color: #545797;
 }
@@ -67,7 +64,6 @@
 }
 .montserrat-white, .reading-white {
     color: white;
-
 }
 .montserrat-black {
     /*font-family and style*/
@@ -151,5 +147,4 @@
 }
 .yellow-box p {
     margin: auto;
-}
->>>>>>> cec531639a9817b530ffb5dc367ad5a2deed8fdc
+} 
