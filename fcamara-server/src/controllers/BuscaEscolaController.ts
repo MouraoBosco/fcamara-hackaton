@@ -1,38 +1,51 @@
 import { Request, Response } from "express";
-import { escola } from '../database/models/escola';
+import { initModels, escola } from '../database/models/init-models';
+import sequelize from '../database/index';
+import { Op } from "sequelize";
 
 export default class EscolaController {
   async index (request: Request, response: Response): Promise<Response> {
-    const escolas = await escola.findAll();
+    
+    initModels(sequelize);
 
-    if (escolas) {
+    try {
+      const escolas = await escola.findAll();      
+
       return response.json(escolas);
-    } else {
-      return response.status(404).send("Nenhuma escola encontrada!");
+    } catch (error) {
+      console.log(error);
+      return response.status(404).send("Nenhuma escola encontrada!");      
     }
+
   }
 
   async show (request: Request, response: Response): Promise<Response> {
+    initModels(sequelize);
+
     const { nome, endereco } = request.params;
 
     let escolaBuscada;
 
-    if (nome) {
-      escolaBuscada = await escola.findOne({
-        where: { nome_escola: '%'+ nome + '%' }
-      });
-    } 
-    /*else if (endereco) {
-      escolaBuscada = await escola.findOne({
-        where: { endereco_escola: '%' + endereco + '%' }
-      });
-    }*/
-    
+    try {      
+      if (nome) {
+        escolaBuscada = await escola.findOne({
+          where: { 
+            nome_escola: {
+              [Op.like]: '%'+ nome + '%' 
+            }
+          } 
+        });
+      } 
+      /*else if (endereco) {
+        escolaBuscada = await escola.findOne({
+          where: { endereco_escola: '%' + endereco + '%' }
+        });
+      }*/
 
-    if (escolaBuscada) {
       return response.json(escolaBuscada);
-    } else {
-      return response.status(404).send("Escola não encontrada!");
+    } catch (error) {
+      return response.status(404).send("Escola não encontrada!");      
     }
+
   }
 }

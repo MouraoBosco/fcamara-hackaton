@@ -15,6 +15,6 @@ routes.post('/responsavel', responsavelController.create);
 routes.get('/escola/:codigo_escola', escolaController.show);
 
 routes.get('/buscaEscola', buscaEscolaController.index);
-routes.get('/buscaEscola/:nome?/:endereco?', buscaEscolaController.show);
+routes.get('/buscaEscola/:nome', buscaEscolaController.show);
 
 export default routes;
