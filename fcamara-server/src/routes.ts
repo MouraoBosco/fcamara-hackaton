@@ -18,7 +18,7 @@ routes.post('/responsavel', responsavelController.create);
 
 routes.get('/escola/:codigo_escola', escolaController.show);
 
-routes.get('/buscaEscola', buscaEscolaController.index);
+routes.get('/buscaEscola/:tipo_escola?', buscaEscolaController.index);
 routes.get('/buscaEscola/:nome', buscaEscolaController.show);
 
 routes.get('/material/:id_material', materialController.show);

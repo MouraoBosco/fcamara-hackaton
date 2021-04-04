@@ -8,21 +8,30 @@ export default class EscolaController {
     
     initModels(sequelize);
 
+    const { tipo_escola } = request.params;
+
     try {
-      const escolas = await escola.findAll();      
+      let escolas;
+
+      if (tipo_escola) {
+        escolas = await escola.findAll({
+          where: { tipo_escola }
+        });
+      } else {
+        escolas = await escola.findAll();
+      }
 
       return response.json(escolas);
     } catch (error) {
       console.log(error);
       return response.status(404).send("Nenhuma escola encontrada!");      
     }
-
   }
 
   async show (request: Request, response: Response): Promise<Response> {
     initModels(sequelize);
 
-    const { nome, endereco } = request.params;
+    const { nome } = request.params;
 
     let escolaBuscada;
 
@@ -36,16 +45,10 @@ export default class EscolaController {
           } 
         });
       } 
-      /*else if (endereco) {
-        escolaBuscada = await escola.findOne({
-          where: { endereco_escola: '%' + endereco + '%' }
-        });
-      }*/
 
       return response.json(escolaBuscada);
     } catch (error) {
       return response.status(404).send("Escola não encontrada!");      
     }
-
   }
 }
