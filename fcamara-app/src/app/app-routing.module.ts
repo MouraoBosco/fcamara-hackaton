@@ -10,6 +10,7 @@ import { CadastroSucessoComponent } from './components/cadastro-sucesso/cadastro
 import { DoacaoPagamentoComponent } from './components/doacao-pagamento/doacao-pagamento.component';
 import { DoacaoBoletoComponent }  from './components/doacao-boleto/doacao-boleto.component';
 import { DoacaoFinalComponent } from './components/doacao-final/doacao-final.component';
+import { DoacaoOpcoesComponent } from './components/doacao-opcoes/doacao-opcoes.component';
 
 const routes: Routes = [
   {path:'main', component: MainComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'cadastro-sucesso', component: CadastroSucessoComponent},
   {path:'doacao-pagamento', component: DoacaoPagamentoComponent},
   {path:'doacao-boleto', component: DoacaoBoletoComponent},
-  {path:'doacao-final', component: DoacaoFinalComponent}
+  {path:'doacao-final', component: DoacaoFinalComponent},
+  {path:'doacao-opcoes', component: DoacaoOpcoesComponent}
 ];
 
 
