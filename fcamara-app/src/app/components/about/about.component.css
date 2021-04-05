@@ -19,7 +19,7 @@
     
 }   
 
- h2 {
+ .collab-box h2 {
     font-size: 1.3rem;
     text-align: center;
     margin: 10px 10px 0 0;
@@ -31,5 +31,13 @@
     line-height: 3.2rem;
     
 }
-
-
+.about-carousel {
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    padding: 8px;
+    
+}
+* { 
+    margin: 0;
+    font-family:'Montserrat,Trebuchet MS';
+}

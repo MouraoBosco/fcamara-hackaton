@@ -26,7 +26,7 @@
 /* CONFIGURANDO BOTÕES DO HOME */
 
 .btn-option {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Montserrat,Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 130px;
     height: 100px;
     border-radius: 12px;
@@ -132,7 +132,7 @@
     position: absolute;
     top: 25vh;
     left: 24vw;
-    padding: 15px;
+    padding: auto;
     font-size: 18px;
     margin: auto;
     display: flex;
