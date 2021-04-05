@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
+* {
+    font-family:'Montserrat,Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .btn-continue {
     width: 110px;
     height: 50px;
@@ -42,4 +44,7 @@
     opacity: 1;
     z-index: -1;
 }
+
+
+
 
