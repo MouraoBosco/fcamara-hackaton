@@ -1,53 +1,38 @@
-.header h1 {
+
+ h1 {
     font-size: 1.8rem;
     text-align: center;
-    margin: 3vh 0 30px 0;
+    margin: 0 0 30px 0;
     background-color: #FFBA08;
     border-radius: 10px;
     height: 3.2rem;
     line-height: 3.2rem;
-    color: rgb(240, 239, 239);
+    color: #fff;
 }   
 
-.sucess-box {
-    background-color: #545797;
-    color: #fff;
-    width: 60vw;
-    height: 30vh;
-    margin-top: 6vh;
-    margin-left: 4vw; 
-    background: #545797;
-    border: 14px solid #4D508B;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 89px;
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 5vh;
-}
-
-h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2vh;
-}
-
-.btn-area {
+.btn-area1 {
     display: flex;
     justify-content: center;
-    margin-top: 3vh;
+    margin-right: 10vw;
+    padding-top: 15vh;
  }
- 
+
+ .btn-area2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 10vw;
+    margin-top: 2vh;
+ }
+
  .btn-continue {
-     width: 140px;
+     width: 160px;
      height: 50px;
      background-color: #fff;
      border: none;
      color: #a1a1a1;
      border-radius: 4px;
      transition: ease-out 0.3s;
-     font-size: 1rem;
+     font-size: 0.9rem;
      outline: none;
      border: 3px solid #FF6714;
      position: relative;
@@ -80,9 +65,8 @@ h2 {
      opacity: 1;
      z-index: -1;
  }
- 
- span {
-     display: flex;
-     justify-content: center;
-     margin-top: 3vh;
+
+ .img-boleto {
+     margin-left: 9vw;
  }
+ 
