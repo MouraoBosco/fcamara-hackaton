@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-escolas',
   templateUrl: './escolas.component.html',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EscolasComponent implements OnInit {
 
+  
+  public responsaveis = [
+
+    {
+      id: 1,
+      date: '28-02-2021',
+      nome: "Elisa",
+    },
+    {
+      id: 2,
+      date: '28-02-2021',
+      nome: "Ana"
+    },
+    {
+      id:3,
+      date: "05-04-2021",
+      nome: "Luciano"
+    }
+  ]
+    
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

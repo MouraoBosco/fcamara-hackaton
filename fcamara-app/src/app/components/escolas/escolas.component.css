@@ -67,7 +67,20 @@
     margin-bottom: 20px;
     font-weight: 400;
 }
-
+table {
+    background-color: #DE6D30;
+ 
+    
+}
+.table-box {
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 15px;
+    width: 400px;
+}
 /* APLICANDO RESPONSVIDADE COM MEDIA QUERY */ 
 @media (min-width) {
     

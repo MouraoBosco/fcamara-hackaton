@@ -11,6 +11,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxMaskModule } from 'ngx-mask';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+import { EscolasComponent } from './components/escolas/escolas.component';
 
 @NgModule ({
   declarations: [
@@ -18,6 +20,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     NavComponent,
     MainComponent,
     AboutComponent,
+    EscolasComponent,
+    
    ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CarouselModule,
     NgxMaskModule.forRoot(),
     NgxBootstrapIconsModule.pick(allIcons),
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  readonly apiURL: string;
+
+  constructor() {
+      this.apiURL = 'http://localhost:3000';
+   }
 
   ngOnInit() {
   }
