@@ -8,6 +8,8 @@ import { EscolasComponent } from './components/escolas/escolas.component';
 import { MainComponent } from './components/main/main.component';
 import { CadastroSucessoComponent } from './components/cadastro-sucesso/cadastro-sucesso.component';
 import { DoacaoPagamentoComponent } from './components/doacao-pagamento/doacao-pagamento.component';
+import { DoacaoBoletoComponent }  from './components/doacao-boleto/doacao-boleto.component';
+import { DoacaoFinalComponent } from './components/doacao-final/doacao-final.component';
 
 const routes: Routes = [
   {path:'main', component: MainComponent},
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path:'doacao', component: DoacaoComponent},
   {path:'', component: MainComponent},
   {path:'cadastro-sucesso', component: CadastroSucessoComponent},
-  {path:'doacao-pagamento', component: DoacaoPagamentoComponent}
+  {path:'doacao-pagamento', component: DoacaoPagamentoComponent},
+  {path:'doacao-boleto', component: DoacaoBoletoComponent},
+  {path:'doacao-final', component: DoacaoFinalComponent}
 ];
 
 
