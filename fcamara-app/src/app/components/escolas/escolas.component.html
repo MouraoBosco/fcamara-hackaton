@@ -29,13 +29,15 @@
          <thead>
            <tr>
              <td><strong>ID</strong></td>
-             <td><strong>Data</strong></td>
+             <td><strong>Data de registro</strong></td>
+             <td><strong>Nome</strong></td>
            </tr>
          </thead>
          <tbody>
-           <tr *ngFor="let responsavel of responsaveis" >
+           <tr *ngFor="let responsavel of responsaveis">
              <td style="width: 100px;" >{{responsavel.id}}</td>
-             <td style="width: 100px;" >{{responsavel.date}}</td>
+             <td style="width: 150px;" >{{responsavel.date}}</td>
+             <td style="width: 100px;" >{{responsavel.nome}}</td>
            </tr>
          </tbody>
        </table>

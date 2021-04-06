@@ -13,6 +13,7 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { EscolasComponent } from './components/escolas/escolas.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule ({
   declarations: [
@@ -30,7 +31,8 @@ import { EscolasComponent } from './components/escolas/escolas.component';
     NgxMaskModule.forRoot(),
     NgxBootstrapIconsModule.pick(allIcons),
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

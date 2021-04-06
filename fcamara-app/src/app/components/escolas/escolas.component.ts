@@ -25,7 +25,18 @@ export class EscolasComponent implements OnInit {
       id:3,
       date: "05-04-2021",
       nome: "Luciano"
-    }
+    },
+    {
+      id:4,
+      date: "05-04-2021",
+      nome: "Patrick"
+    },
+    {
+      id:5,
+      date: "04-04-2021",
+      nome: "Zack"
+    },
+    
   ]
     
   constructor() { }
