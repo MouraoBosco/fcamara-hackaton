@@ -3,6 +3,55 @@
     margin: 3px 0 0 20px;
 }
 
+.btn-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+ }
+ 
+ .btn-continue {
+     width: 110px;
+     height: 50px;
+     background-color: #fff;
+     border: none;
+     color: #a1a1a1;
+     border-radius: 4px;
+     transition: ease-out 0.3s;
+     font-size: 1rem;
+     outline: none;
+     border: 3px solid #FF6714;
+     position: relative;
+     z-index: 1;
+     text-transform: uppercase;
+     font-weight: 500;
+     margin-bottom: 2vh;
+ } 
+ 
+ .btn-continue:hover {
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ .btn-continue:before {
+     transition: 0.5s all ease;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     right: 50%;
+     bottom: 0;
+     opacity: 0; 
+     content: '';
+     background: #FF6714;
+ }
+ 
+ .btn-continue:hover:before {
+     transition: 0.5 all ease;
+     left: 0;
+     right: 0;
+     opacity: 1;
+     z-index: -1;
+ }
+
 
 #header h1 {
     font-size: 1.8rem;
@@ -45,7 +94,7 @@
 }
 
 .code-area .input:focus {
-    border: 2px solid #545797;
+    border: 2px solid #FF6714;
 }
 
 .input{
@@ -81,7 +130,69 @@ table {
     padding: 15px;
     width: 400px;
 }
-/* APLICANDO RESPONSVIDADE COM MEDIA QUERY */ 
-@media (min-width) {
+ /* APLICANDO MEDIA QUERY PARA DEIXAR O LAYOUT RESPONSIVO */ 
+ @media (max-width: 37em) and (max-width: 30em) {  /* 592px */
+     .input {
+         width: 60vw;
+         margin-left: 10vw;
+     }
+
+     h2 {
+         font-size: 1.1rem;
+         line-height: 2rem;
+     }
+
+     #header h1 {
+         font-size: 1.4rem;
+     }
+
+     .btn-voltar-area {
+         margin-left: -5vw;
+     }
+ } 
+
+@media (max-width: 41em) and (max-width: 35) { /* 656px */
+    .input {
+        width: 40vw;
+        margin-left: -10vw;
+    }
+    h2 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+ } 
+
+@media (max-width: 47em) { /* 752px */
+    .input {
+        width: 60vw;
+        margin-left: -1vw;
+    }
+    h2 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+ } 
+
+@media (max-width: 68em) { /* 1088px */
+    .input {
+        width: 60vw;
+        margin-left: -1vw;
+    }
+    h2 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+ } 
+
+@media (max-width: 82em) { /* 1312px */
+    .input {
+        width: 60vw;
+        margin-left: 10vw;
+    }
+ } 
+
+@media (max-width: 100em) { /* 1600px */
     
-}
+
+ } 

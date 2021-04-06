@@ -6,7 +6,7 @@
     border-radius: 10px;
     height: 3.2rem;
     line-height: 3.2rem;
-    color: rgb(240, 239, 239);
+    color: #000;
 }   
 
 .sucess-box {
@@ -86,3 +86,107 @@ h2 {
      justify-content: center;
      margin-top: 3vh;
  }
+
+ /* APLICANDO MEDIA QUERY PARA DEIXAR O LAYOUT RESPONSIVO */ 
+@media (max-width: 37em) and (max-width: 30em) {  /* 592px */
+    .sucess-box {
+        width: 80vw;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .msg {
+        display: block;
+        font-size: 1.4rem;;
+        margin: 0 -4vh;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }   
+ 
+} 
+@media (max-width: 41em) { /* 656px */
+    .sucess-box {
+        width: 80vw;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .msg {
+        display: block;
+        font-size: 1.3rem;;
+        margin: 0 -4vh;
+    }
+     
+    .header h1 {
+        font-size: 1.2rem;
+    }   
+  
+} 
+@media (max-width: 47em) { /* 752px */
+    .sucess-box {
+        width: 80vw;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .msg {
+        display: block;
+        font-size: 1.3rem;
+        margin: 0 -4vh;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }   
+ 
+
+ } 
+@media (max-width: 68em) { /* 1088px */
+    .sucess-box {
+        width: 80vw;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .sucess-box .msg {
+        margin-bottom: 2vh;
+    }
+    .msg {
+        display: block;
+        font-size: 1rem;
+        margin: 0 -4vh;
+    }
+
+
+ } 
+@media (max-width: 82em) { /* 1312px */
+    .msg {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0 -4vh;
+    }
+
+    .msg2 {
+        font-size: 1rem;
+        padding: 0 0;
+    }
+ } 
+@media (max-width: 100em) { /* 1600px */
+    .msg {
+        display: block;
+        font-size: 1.4rem;
+        margin: 0 -4vh;
+    }
+
+ } 
