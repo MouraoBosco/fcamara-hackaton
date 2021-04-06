@@ -7,7 +7,7 @@
     border-radius: 10px;
     height: 3.2rem;
     line-height: 3.2rem;
-    color: #fff;
+    color: #000;
 }   
 
 .btn-area1 {
@@ -72,6 +72,94 @@
  }
 
  .img-boleto {
+     display: flex;
      margin-left: 9vw;
  }
  
+/* APLICANDO MEDIA QUERY PARA DEIXAR O LAYOUT RESPONSIVO */ 
+@media (max-width: 37em) { /* 592px */
+    img {
+        display: flex;
+        width: 45vw;
+        height: 31vh;
+    }
+    
+    .btn-area1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50vh;
+        margin-left: -55vw;
+    }
+    .btn-area2 {
+        margin-left: -55vw;
+    }
+
+ } 
+@media (max-width: 41em) { /* 656px */
+    img {
+        display: flex;
+        width: 55vw;
+        height: 41vh;
+    }
+ } 
+@media (max-width: 47em) { /* 752px */
+    img {
+        display: flex;
+        width: 60vw;
+        height: 46vh;
+    }
+    .btn-area1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50vh;
+        margin-left: -55vw;
+    }
+    .btn-area2 {
+        margin-left: -55vw;
+    }
+    
+
+ } 
+@media (max-width: 68em) { /* 1088px */
+    img {
+        display: flex;
+        width: 65vw;
+        height: 51vh;
+    }
+    .btn-area1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50vh;
+        position: relative;
+        left: -115%;
+    }
+
+    .btn-area2 {
+        padding-left: -55vw;
+        position: relative;
+        left: -115%;
+    }
+
+    .btn-area3 {
+        padding-bottom: 5vh;
+    }  
+    
+ } 
+@media (max-width: 82em) { /* 1312px */
+    img {
+        display: flex;
+        width: 70vw;
+        height: 61vh;
+    }
+    .btn-area1 {
+        margin-left: 4vw;
+    }
+    .btn-area2 {
+        margin-left: 4vw;
+    }
+
+
+ } 
+@media (max-width: 100em) { /* 1600px */
+
+ } 

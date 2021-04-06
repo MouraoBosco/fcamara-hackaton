@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
-.img-carousel {
+
+.btn-register {
+    font-size: 0.8rem;
+}
+
+.img-crousel {
     margin: 0 auto;
     height: 85vh;
     width: 80vw;
@@ -15,13 +20,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 24vh;
+    margin-top: 5vh;
+    flex-direction: row;
 }
 .box-option {
     text-align: center;
     padding-top: 20px;
     margin:20px;
+
 }
+
 
 /* CONFIGURANDO BOTÕES DO HOME */
 
@@ -71,7 +79,7 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
-    font-size: 4vh;
+    font-size: 2vh;
     line-height: 29px;
     text-align: center;
 
@@ -148,3 +156,36 @@
 .yellow-box p {
     margin: auto;
 } 
+
+/* APLICANDO MEDIA QUERY PARA DEIXAR O LAYOUT RESPONSIVO */ 
+@media (max-width: 37em) {  /* 592px */
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+
+    .btn-option {
+        margin: -5vh 0;
+        width: 60vw;
+    }
+} 
+@media (max-width: 41em) { /* 656px */
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-option {
+        margin: -2vh 0;
+    }
+} 
+@media (max-width: 47em) { /* 752px */
+    
+ } 
+@media (max-width: 82em) { /* 1312px */
+
+ } 
+@media (max-width: 100em) { /* 1600px */
+    
+ } 
